@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seguimiento de Pedido - Clean Clothes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header-page">
+      <a href="#" onclick="volverDashboard()" class="btn-volver">
+        ← Dashboard
+      </a>
+
+      <h1>🔍 Seguimiento de Pedido</h1>
+    </header>
+    <div class="seguimiento-container">
+      <h2>🧺 Seguimiento de Pedido</h2>
+
+      <p>Ingresa tu número de pedido para ver el estado</p>
+
+      <input type="text" id="codigoPedido" placeholder="Ej: 001" />
+      <button onclick="buscarPedido()">Buscar</button>
+
+      <div id="resultado"></div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/seguimiento.js"></script>
+  </body>
+</html>

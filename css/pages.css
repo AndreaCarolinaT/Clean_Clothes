@@ -1,0 +1,112 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TARJETA */
+.login-card {
+    background: white;
+    padding: 40px;
+    width: 320px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* TITULO */
+.login-card h1 {
+    margin-bottom: 5px;
+    color: #2563EB;
+}
+
+/* SUBTITULO */
+.subtitle {
+    font-size: 14px;
+    color: #64748B;
+    margin-bottom: 20px;
+}
+
+.container h2{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.form-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    max-width:700px;
+    margin:auto;
+}
+
+.form-card h2{
+    margin-top:0;
+    color:#2563EB;
+}
+
+.grupo-formulario{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
+}
+
+.grupo-formulario label{
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea{
+    padding:12px;
+    border:1px solid #CBD5E1;
+    border-radius:8px;
+}
+
+/* seguimiento */
+
+.seguimiento-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.seguimiento-container h2 {
+    color: #2563EB;
+}
+
+.seguimiento-container input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.seguimiento-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.seguimiento-container button:hover {
+    background: #1d4ed8;
+}
+
+.resultado-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #F8FAFC;
+}

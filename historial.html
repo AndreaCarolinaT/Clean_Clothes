@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Historial</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header-page">
+      <a href="dashboard_cliente.html" class="btn-volver"> ← Dashboard </a>
+
+      <h1>📄 Historial de Pedidos</h1>
+    </header>
+
+    <div class="contenedor">
+      <h2>Mis Pedidos</h2>
+
+      <div class="tabla-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Servicio</th>
+              <th>Fecha</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+
+          <tbody id="tablaHistorial"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/historial.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

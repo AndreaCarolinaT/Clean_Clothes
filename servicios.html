@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Servicios - Clean Clothes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header-page">
+      <a href="#" onclick="volverDashboard()" class="btn-volver">
+        ← Dashboard
+      </a>
+
+      <h1>🧺 Gestión de Servicios</h1>
+    </header>
+
+    <div class="contenedor">
+      <!-- Formulario -->
+      <div class="form-card">
+        <h2>Nuevo Servicio</h2>
+
+        <div class="grupo-formulario">
+          <label>Nombre del servicio</label>
+          <input type="text" id="nombreServicio" placeholder="Ej: Lavado" />
+        </div>
+
+        <div class="grupo-formulario">
+          <label>Precio</label>
+          <input type="number" id="precioServicio" placeholder="Ej: 15000" />
+        </div>
+
+        <button onclick="crearServicio()">Guardar Servicio</button>
+      </div>
+
+      <h2>Servicios Registrados</h2>
+
+<div class="tabla-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaServicios">
+        </tbody>
+    </table>
+</div>
+      </div>
+      <br />
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/servicios.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

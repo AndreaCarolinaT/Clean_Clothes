@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Pedido | Clean Clothes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header-page">
+      <a href="pedidos.html" class="btn-volver"> ← Gestión de Pedidos </a>
+
+      <h1>📝 Registrar Pedido</h1>
+    </header>
+    <div class="contenedor">
+      <div class="form-card">
+        <form id="formPedido">
+          <div class="grupo-formulario">
+            <label for="cliente">Nombre del Cliente</label>
+            <input type="text" id="cliente" required />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="prenda">Tipo de Prenda</label>
+            <select id="prenda">
+              <option>Camisa</option>
+              <option>Pantalón</option>
+              <option>Vestido</option>
+              <option>Chaqueta</option>
+              <option>Ropa de cama</option>
+            </select>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="servicio">Servicio</label>
+            <select id="servicio">
+              <option>Lavado</option>
+              <option>Planchado</option>
+              <option>Lavado y Planchado</option>
+            </select>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="cantidad">Cantidad de Prendas</label>
+            <input type="number" id="cantidad" min="1" value="1" />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="fecha">Fecha de Entrega</label>
+            <input type="date" id="fecha" />
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="observaciones">Observaciones</label>
+            <textarea id="observaciones" rows="4"></textarea>
+          </div>
+
+          <button type="button" class="btn-principal" onclick="guardarPedido()">
+            Guardar Pedido
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/pedidos.js"></script>
+  </body>
+</html>

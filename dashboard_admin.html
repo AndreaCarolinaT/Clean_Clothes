@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard Administrador</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" onclick="cerrarSesion()" class="btn-logout">
+        🚪 Cerrar sesión
+      </a>
+
+      <h1>🧺 Clean Clothes</h1>
+      <p>Panel del Administrador</p>
+    </header>
+
+    <div class="container">
+      <!-- Bienvenida -->
+      <div class="card">
+        <h2>Bienvenido, <span id="rolUser"></span></h2>
+        <p>Gestión integral de lavandería Clean Clothes</p>
+      </div>
+
+      <!-- Estadísticas -->
+      <div class="estadisticas">
+        <div class="card">
+          <h3 id="totalPedidos">0</h3>
+          <p>Pedidos Totales</p>
+        </div>
+
+        <div class="card">
+          <h3 id="enProceso">0</h3>
+          <p>En Proceso</p>
+        </div>
+
+        <div class="card">
+          <h3 id="listos">0</h3>
+          <p>Listos</p>
+        </div>
+
+        <div class="card">
+          <h3 id="entregados">0</h3>
+          <p>Entregados</p>
+        </div>
+      </div>
+
+      <!-- Módulos -->
+      <h2>Módulos del Sistema</h2>
+
+      <div class="estadisticas">
+        <a href="pedidos.html" class="card card-link">
+          <h3>📦</h3>
+          <p>Gestión de Pedidos</p>
+        </a>
+
+        <a href="servicios.html" class="card card-link">
+          <h3>🧺</h3>
+          <p>Servicios</p>
+        </a>
+
+        <a href="usuarios.html" class="card card-link">
+          <h3>👥</h3>
+          <p>Usuarios</p>
+        </a>
+
+        <a href="inventario.html" class="card card-link">
+          <h3>🧴</h3>
+          <p>Inventario</p>
+        </a>
+
+        <a href="notificaciones.html" class="card card-link">
+          <h3>🔔</h3>
+          <p>Notificaciones</p>
+        </a>
+
+        <a href="seguimiento.html" class="card card-link">
+          <h3>📍</h3>
+          <p>Seguimiento</p>
+        </a>
+      </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/pedidos.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
